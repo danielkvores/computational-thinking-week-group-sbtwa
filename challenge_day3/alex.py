@@ -1,8 +1,7 @@
-def print_names(names):
-    for name in names:
-        print(name)
+def print_name(name):
+    print(name)
 
 
-names = ["Alex"]
+name = "Alex"
 
-print_names(names)
+print_name(name)
