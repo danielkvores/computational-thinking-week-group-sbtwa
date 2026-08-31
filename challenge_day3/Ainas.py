@@ -1,4 +1,2 @@
-def printAinas():
-    print("Daniel is Mega gay")
-
-printAinas()
+def print_ainas():
+    return "Ainas"

@@ -1,7 +1,3 @@
-def print_name(name):
-    print(name)
+def print_alex():
+    return "Alex"
 
-
-name = "Alex"
-
-print_name(name)
