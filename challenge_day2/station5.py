@@ -7,4 +7,4 @@ def solution_station_5(name):
         "Yasmin": 1,
         "Arnav": 3,
     }
-    print(name_dict.get(name))
+    return name_dict.get(name)
