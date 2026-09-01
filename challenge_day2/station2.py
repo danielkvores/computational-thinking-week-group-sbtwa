@@ -18,5 +18,3 @@ def solution_station_2(date_string):
         return "土曜日"
     elif english_day() == "Sunday":
         return "日曜日"
-
-print(solution_station_2("2026-02-26"))
