@@ -6,10 +6,8 @@ import matplotlib.pyplot as plt
 #plt.plot(x, y)
 #plt.show()
 
-x = 67
-
 def solution_station_6(x):
     y = -(0.4822) * x**2 + 1.5100*x -0.1820
     return y
 
-print(solution_station_6)
+print(solution_station_6(67))
