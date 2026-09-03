@@ -4,17 +4,17 @@ import (
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"os"
 )
 
 type Person struct {
-	Name           string `json:"name"`
-	TechnicalSkills float64    `json:"Technical methods"`
-	SoftSkills      float64    `json:"Soft Skills"`
-	BusinessSkills  float64    `json:"Business Skills"`
-	CreativeSkills  float64    `json:"Creative Skills"`
-	AcademicSkills  float64    `json:"Academic Skills"`
+	Name            string  `json:"name"`
+	TechnicalSkills float64 `json:"Technical methods"`
+	SoftSkills      float64 `json:"Soft Skills"`
+	BusinessSkills  float64 `json:"Business Skills"`
+	CreativeSkills  float64 `json:"Creative Skills"`
+	AcademicSkills  float64 `json:"Academic Skills"`
 }
 
 type People struct {
@@ -23,14 +23,14 @@ type People struct {
 
 func main() {
 	// Read the JSON file
-	jsonFile, err := os.Open("data2.json")
+	jsonFile, err := os.Open("../R_step1/data2.json")
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
 	}
 	defer jsonFile.Close()
 
-	jsonBytes, err := ioutil.ReadAll(jsonFile)
+	jsonBytes, err := io.ReadAll(jsonFile)
 	if err != nil {
 		fmt.Println("Error:", err)
 		return
