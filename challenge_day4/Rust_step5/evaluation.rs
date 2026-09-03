@@ -12,7 +12,7 @@ fn main() -> io::Result<()> {
     let mut output = OpenOptions::new()
         .write(true)
         .create(true)
-        .open("data5.txt")?;
+        .open("data6.txt")?;
     
     for (index, line) in reader.lines().enumerate() {
         let line = line?;
